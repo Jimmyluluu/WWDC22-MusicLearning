@@ -48,14 +48,14 @@ struct LessonThreeView: View {
                     HStack {
                         ForEach(sd1, id:\.name1) { s in
                             VStack {
-                                Image(systemName: "arrow.up").resizable().frame(width: 30, height: 50, alignment: .center)
-                                Text(s.name2).font(.title)
+                                Image(systemName: "arrow.up").resizable().frame(width: 30, height: 50, alignment: .center).foregroundColor(Color(hex:"#404654"))      
+                                Text(s.name2).font(.title).foregroundColor(Color(hex:"#404654"))
                             }.padding().offset(x: 70, y: 0)
                         }
                         ForEach(sd2, id:\.name1) { s in
                             VStack {
-                                Image(systemName: "arrow.up").resizable().frame(width: 30, height: 50, alignment: .center)
-                                Text(s.name2).font(.title)
+                                Image(systemName: "arrow.up").resizable().frame(width: 30, height: 50, alignment: .center).foregroundColor(Color(hex:"#404654"))
+                                Text(s.name2).font(.title).foregroundColor(Color(hex:"#404654"))      
                             }.padding().offset(x: 90, y: 0)
                         }
                     }.offset(x: 0, y: -50)

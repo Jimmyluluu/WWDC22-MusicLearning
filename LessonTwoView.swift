@@ -70,9 +70,9 @@ struct LessonTwoView: View {
                             ZStack {
                                 Rectangle().fill(Color.white).frame(width: 90.0, height: 200.0).border(Color.black, width: 1)
                                 Text(s.name1)
-                                    .font(.title)
+                                    .font(.title).foregroundColor(Color(hex:"#404654"))
                             }
-                            Text(s.name2).font(.title)
+                            Text(s.name2).font(.title).foregroundColor(Color(hex:"#404654"))      
                         }
                     }
                 }.opacity(self.alphaValue)

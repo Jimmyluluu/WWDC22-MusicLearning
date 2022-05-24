@@ -23,7 +23,7 @@ struct StartView: View {
                 Text("It is an app which you can learn music by sample piano.")
                     .font(.title)
                     .foregroundColor(Color(hex:"#404654"))
-                Text("After four lesson, you can know base music notations.").font(.title).foregroundColor(Color(hex:"#404654"))
+                Text("After four lessons, you can know basic music notations.").font(.title).foregroundColor(Color(hex:"#404654"))
                 Text("Finally, you will have a challenge.").font(.title).foregroundColor(Color(hex:"#404654"))
                 HStack(alignment: .center) {
                     Image("Guitar").resizable().frame(width: 500, height: 500, alignment: .leading)

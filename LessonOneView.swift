@@ -48,15 +48,15 @@ struct LessonOneView: View {
                     HStack {
                         VStack(alignment: .leading) {
                             Text("This is sheet music has five line and clef.")
-                                .font(.title)
-                            Text("The staff is strewn with notes.").font(.title)                        }
+                                .font(.title).foregroundColor(Color(hex:"#404654"))
+                            Text("The staff is strewn with notes.").font(.title)     .foregroundColor(Color(hex:"#404654"))                   }
                         Image("Staff").resizable().frame(width: 200, height: 100).padding()
                         
                     }
                 }
                 
                 
-                Text("We can see symbols on the staff.").font(.title)
+                Text("We can see symbols on the staff.").font(.title).foregroundColor(Color(hex:"#404654"))      
                     .padding(10)
                     .offset(x: 0, y: -5)
                 Button(action:{
