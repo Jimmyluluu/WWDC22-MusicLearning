@@ -8,13 +8,13 @@ import PackageDescription
 import AppleProductTypes
 
 let package = Package(
-    name: "LearingMusic",
+    name: "LearningMusic",
     platforms: [
         .iOS("15.2")
     ],
     products: [
         .iOSApplication(
-            name: "LearingMusic",
+            name: "LearningMusic",
             targets: ["AppModule"],
             bundleIdentifier: "app.LearingMusic",
             teamIdentifier: "22884U69K7",
