@@ -37,7 +37,7 @@ struct LessonThreeView: View {
                     .fontWeight(.heavy)
                     .offset(x: 0, y: -20)
                     .padding(80)
-                Text("If we want to play music, we need to know sheet muisc or numbered musical notation.")
+                Text("If we want to play music, we need to know sheet muisc or numbered musical notations.")
                     .font(.title)
                     .foregroundColor(Color(hex:"#404654"))
                     .offset(x: 0, y: -50)
@@ -62,7 +62,7 @@ struct LessonThreeView: View {
                 }.padding().offset(x: 0, y: -70)
                 VStack(alignment: .leading) {
                     Text("Four-four time, it represented that there have four time in a bar.").font(.title).foregroundColor(Color(hex:"#404654"))
-                Text("So, the sheet music shows that there have two bars.  notations.")
+                Text("So, the sheet music shows that there have two bars in notation.")
                         .font(.title).foregroundColor(Color(hex:"#404654"))
                     Text("And, one bar has four times.")
                         .font(.title).foregroundColor(Color(hex:"#404654"))
