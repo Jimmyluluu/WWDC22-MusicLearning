@@ -6,4 +6,3 @@
 - SwiftUI 
 - AVFoundation
 
-特別感謝[鍾旻倢](https://github.com/min-jie) 插圖提供
