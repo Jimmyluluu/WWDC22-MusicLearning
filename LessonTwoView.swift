@@ -45,7 +45,7 @@ struct LessonTwoView: View {
                         .font(.title)
                         .foregroundColor(Color(hex:"#404654"))
                         .padding()
-                    Text("They correspond to Do Re Mi Fa So La Si")
+                    Text("They correspond to Do Re Mi Fa So La Si.")
                         .font(.title)
                         .foregroundColor(Color(hex:"#404654"))
                         .padding()
