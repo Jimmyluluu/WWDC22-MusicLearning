@@ -7,4 +7,7 @@
 - AVFoundation
 
 ## 插圖提供
- 
+- [鍾旻倢](https://github.com/min-jie)
+
+## 創作者
+- [魯敬元](https://github.com/Jimmyluluu)：
