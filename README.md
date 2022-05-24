@@ -3,11 +3,7 @@
 這是一個讓沒有接觸過音樂的人，初步了解五線譜，並完成小星星這首童謠的練習挑戰。
 
 ## 使用技術
-- SwfitUI 
+- SwiftUI 
 - AVFoundation
 
-## 插圖提供
-- [鍾旻倢](https://github.com/min-jie)
-
-## 創作者
-- [魯敬元](https://github.com/Jimmyluluu)：
+特別感謝[鍾旻倢](https://github.com/min-jie) 插圖提供
