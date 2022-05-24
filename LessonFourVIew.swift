@@ -29,7 +29,7 @@ struct LessonFourView: View {
                 VStack{
                 Text("Lesson Four - Twinkle Twinkle Little Star")
                         .font(.largeTitle).fontWeight(.heavy).foregroundColor(Color(hex:"#404654")).offset(x: 0, y: -60)
-                Text("Finally, We can try to play the classic nursery rhyme.").foregroundColor(Color(hex:"#404654")).font(.title)
+                Text("Finally, we can try to play the classic nursery rhyme.").foregroundColor(Color(hex:"#404654")).font(.title)
 
                 Text("The following is its sheet music, and it will show how to play.").foregroundColor(Color(hex:"#404654")).font(.title)
                 
