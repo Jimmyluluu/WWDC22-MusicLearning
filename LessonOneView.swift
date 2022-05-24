@@ -26,7 +26,7 @@ struct LessonOneView: View {
                 VStack(alignment: .leading) {
                     HStack {
                         VStack(alignment: .leading) {
-                            Text("This is treble quarter note.").font(.title).foregroundColor(Color(hex:"#404654"))
+                            Text("This is a treble quarter note.").font(.title).foregroundColor(Color(hex:"#404654"))
                             Text("It is usually as one time in a song.")
                                 .font(.title).foregroundColor(Color(hex:"#404654"))
                         }
@@ -36,7 +36,7 @@ struct LessonOneView: View {
                     }
                     HStack {
                         VStack(alignment: .leading) {
-                            Text("This is treble half note.").font(.title).foregroundColor(Color(hex:"#404654"))
+                            Text("This is a treble half note.").font(.title).foregroundColor(Color(hex:"#404654"))
                             Text("It is usually as two times in a song.")
                                 .font(.title).foregroundColor(Color(hex:"#404654"))
                         }
@@ -47,7 +47,7 @@ struct LessonOneView: View {
                     
                     HStack {
                         VStack(alignment: .leading) {
-                            Text("This is sheet music has five line and clef.")
+                            Text("This is a sheet music has five line and clef.")
                                 .font(.title).foregroundColor(Color(hex:"#404654"))
                             Text("The staff is strewn with notes.").font(.title)     .foregroundColor(Color(hex:"#404654"))                   }
                         Image("Staff").resizable().frame(width: 200, height: 100).padding()
