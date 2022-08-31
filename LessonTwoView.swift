@@ -9,6 +9,8 @@ import SwiftUI
 import AVFoundation
 import Foundation
 
+
+
 struct note {
     let name1: String
     let name2: String
@@ -24,10 +26,10 @@ let sod = [
     note(name1: "B3", name2: "Si")
 ]
 
-
 struct LessonTwoView: View {
     @State var alphaValue: Double = 0
     @State var alphaValue2: Double = 0
+    let path = Bundle.main.path(forResource: "Play", ofType: "mp3")
     var body: some View {
         ZStack {
             Color(hex:"#E1F7FF").edgesIgnoringSafeArea(.all)
@@ -40,7 +42,7 @@ struct LessonTwoView: View {
                         .font(.title)
                         .foregroundColor(Color(hex:"#404654"))
                         .padding()
-                        
+                    
                     Text("They usaully in terms of C, D, E, F, G, A, B.")
                         .font(.title)
                         .foregroundColor(Color(hex:"#404654"))
@@ -59,8 +61,6 @@ struct LessonTwoView: View {
                         }
                     } , label: {
                         Text("Show").frame(width: 120, height: 40, alignment: .center).foregroundColor(.white).background(RoundedRectangle(cornerRadius: 20).foregroundColor(Color(hex: "FB93B2")))
-                            
-                        
                     })
                 }.padding().offset(x: 0, y: -50)
                 
@@ -72,7 +72,7 @@ struct LessonTwoView: View {
                                 Text(s.name1)
                                     .font(.title).foregroundColor(Color(hex:"#404654"))
                             }
-                            Text(s.name2).font(.title).foregroundColor(Color(hex:"#404654"))      
+                            Text(s.name2).font(.title).foregroundColor(Color(hex:"#404654"))
                         }
                     }
                 }.opacity(self.alphaValue)
@@ -81,7 +81,6 @@ struct LessonTwoView: View {
                     withAnimation {
                         alphaValue2 = 1
                     }
-                    let path = Bundle.main.path(forResource: "Play", ofType: "mp3")
                     let url = URL(fileURLWithPath: path!)
                     do {
                         audioPlayer = try AVAudioPlayer(contentsOf: url)
@@ -104,7 +103,16 @@ struct LessonTwoView: View {
                         .frame(width: 120, height: 40, alignment: .center).foregroundColor(.white)
                         .background(RoundedRectangle(cornerRadius: 20).foregroundColor(Color(hex: "FB93B2")))
                     
-                }.opacity(self.alphaValue2).padding()
+                }.opacity(self.alphaValue2).padding().simultaneousGesture(TapGesture().onEnded{
+                    let url = URL(fileURLWithPath: path!)
+                    do {
+                        audioPlayer = try AVAudioPlayer(contentsOf: url)
+                        audioPlayer?.stop()}
+                    
+                    catch {
+                        print("stop fail")
+                    }
+                })
             }.navigationBarBackButtonHidden(true)
         }
     }

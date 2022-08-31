@@ -148,11 +148,13 @@ struct ChallengeView: View {
     }
     func CheckPoint() {
         var j = 0
-        
         for i in 0 ... click.count - 1 {
             if click[i] == ans[j] {
                 point += 1
                 j += 1
+            }
+            else {
+                point -= 1
             }
             if j == 42 {
                 break

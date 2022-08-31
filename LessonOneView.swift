@@ -11,7 +11,6 @@ import Foundation
 
 
 
-
 struct LessonOneView: View {
     @State var alphaValue: Double = 0
     
@@ -20,9 +19,9 @@ struct LessonOneView: View {
         ZStack {
             Color(hex:"#E1F7FF").edgesIgnoringSafeArea(.all)
             VStack {
-               
-                    Text("Lesson One - Musical Notation").fontWeight(.heavy)
-                        .font(.largeTitle).foregroundColor(Color(hex:"#404654")).padding()
+                
+                Text("Lesson One - Musical Notation").fontWeight(.heavy)
+                    .font(.largeTitle).foregroundColor(Color(hex:"#404654")).padding()
                 VStack(alignment: .leading) {
                     HStack {
                         VStack(alignment: .leading) {
@@ -30,7 +29,6 @@ struct LessonOneView: View {
                             Text("It is usually as one time in a song.")
                                 .font(.title).foregroundColor(Color(hex:"#404654"))
                         }
-                        
                         Image("Note")
                             .resizable().frame(width: 100, height: 100, alignment: .center).padding()
                     }

@@ -6,15 +6,15 @@
 //
 
 import SwiftUI
-
 import AVFoundation
 import Foundation
+
+
 
 let sounds = ["C3", "D3", "E3", "F3", "G3", "A3", "B3", "C4"]
 
 var audioPlayer: AVAudioPlayer?
 let player = AVPlayer()
-
 
 struct MusicView: View {
     @State var alphaValue: Double = 0
@@ -75,7 +75,7 @@ struct MusicView: View {
                     }
                 }.padding()
                 
- 
+                
                 VStack {
                     Text("If you are already, click \"Challenge\" you can start to challenge").font(.title).foregroundColor(Color(hex:"#404654"))
                     NavigationLink {

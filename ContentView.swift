@@ -54,9 +54,8 @@ struct ContentView: View {
                     }label :{
                         Label("Challenge",  systemImage: "checkmark.seal")
                     }
-
+                    
                 }.navigationTitle("Lessson").navigationBarBackButtonHidden(true)
-                
                 
             }.navigationBarBackButtonHidden(true)
             StartView()
